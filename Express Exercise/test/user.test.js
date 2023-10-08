@@ -8,14 +8,14 @@ chai.use(chaiHttp);
 const expect = chai.expect;
 
 
-// before(async () => {
-//   try {
-//     await clearAllTables(); // Make sure to use await here
-//     console.log('Database cleared successfully');
-//   } catch (error) {
-//     console.error('Error clearing database:', error);
-//   }
-// });
+before(async () => {
+  try {
+    await clearAllTables(); // Make sure to use await here
+    console.log('Database cleared successfully');
+  } catch (error) {
+    console.error('Error clearing database:', error);
+  }
+});
 
 let phone_number='03409439031'
 describe('User Module', () => {
